@@ -1,0 +1,169 @@
+header{
+    width: 100vw;
+    height: 80px;
+    background-color: var(--cor5);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 10px 10px 30px;
+    box-shadow: var(--sombra2);
+}
+
+.circleWhite{
+    background-color: var(--branco);
+    border-radius: 100%;
+}
+
+.circleBlack{
+    background-color: var(--preto);
+    border-radius: 100%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 10px;
+    cursor: pointer;
+}
+
+.circleBlack > svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+}
+
+.circleBlack:hover{
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+
+
+.icone{
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+    margin: 10px;
+    box-shadow: var(--sombra1);
+
+}
+
+#title{
+    color: var(--branco);
+    font-size: 40px;
+    letter-spacing: 3px;
+    margin: 10px 20px;
+    font-weight: 700;
+    text-shadow: var(--sombra1);;
+}
+
+.link{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 10px;
+    box-shadow: var(--sombra1);
+    cursor: pointer;
+}
+
+.link:hover{
+    background-color: var(--brancoSombra);
+    height: 58px;
+}
+
+.home{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 10px;
+    box-shadow: var(--sombra1);
+    cursor: pointer;
+}
+
+.home:hover{
+    background-color: var(--brancoSombra);
+    height: 58px;
+}
+
+#header-title{
+    width: calc(100vw - 160px);
+    display: flex;
+   align-items: center;
+}
+
+#nav{
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.menu {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+}
+
+#menu:hover{
+    opacity: 0.8;
+    border-radius: 100%;
+}
+
+
+@media (min-width: 571px) {
+    .menu{
+        display: none;
+    }
+}
+
+
+@media (max-width: 570px) {
+    
+    .link{
+        display: none;
+    }
+
+    .icone{
+        width: 40px;
+        height: 40px;
+        padding: 3px;
+        padding-bottom: 10px;
+    }
+
+    #title{
+        font-size: 30px;
+    }
+
+    #nav{
+        width: 20%;
+    }
+
+    #header-title{
+        width: 80%;
+    }
+
+}
+
+@media (max-width: 400px) {
+    #title{
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+#linhas > img {
+    width: 50px;
+    height: 50px
+}

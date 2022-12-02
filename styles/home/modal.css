@@ -1,0 +1,321 @@
+.carrinhoOn {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.55);
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modalOn{
+    border-radius: 10px;
+    width: 750px;
+    height: 600px;
+    background-color: var(--branco);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.carrinhoOff{
+    display: none;
+}
+
+#close{
+    width: 50px;
+    height: 50px;
+    background-color: var(--preto);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s linear;
+    cursor: pointer;
+}
+
+#svgClose {
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+#close:hover{
+    background-color: rgba(0, 0, 0, 0.9);
+   
+}
+
+.modalHeader{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+
+#contentCarrinho{
+    width: 90%;
+    height: 90%;
+}
+
+
+#listaProdutos{
+    width: 100%;
+    height: 70%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardList{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 160px;
+    background-color: var(--cor5);
+    gap: 5px;
+    color: var(--branco);
+    padding: 5px;
+    border-radius: 10px;
+    margin: 10px 2px;
+}
+
+.produto {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.produto > img {
+    width: 100px;
+}
+
+.preco{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.quantidade{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.cardOptions{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.total{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.delete{
+    width: 5%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.lixeira{
+    fill: var(--cor4);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.lixeira:hover{
+    fill: var(--cor6);
+}
+
+#geralCarrinho{
+    margin-top: 20px;
+    background-color: var(--cor5);
+    width: 100%;
+    height: 25%;
+    color: var(--branco);
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 4px;
+}
+
+#geralCarrinho > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#concluirCompra{
+    width: 180px;
+    height: 50px;
+    border-radius: 60px;
+    border: 0;
+    background-color: var(--cor1);
+    font-size: 20px;
+    color: var(--branco);
+    font-weight: 800;
+    opacity: 1;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+#concluirCompra:hover {
+    opacity: 0.9;
+    font-size: 19px;
+}
+
+@media (max-width: 750px) {
+    
+    .modalOn {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+    }
+
+    .cardList{
+        width: 400px;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .produto {
+        width: 320px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .preco{
+        width: 320px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .quantidade{
+        width: 320px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .cardOptions{
+        width: 320px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .total{
+        width: 320px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .delete{
+        width: 320px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #geralCarrinho{
+        padding-top: 5px;
+        flex-direction: column;
+        gap: 4px;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 4px;
+    }
+
+
+}
+
+
+.menuNav{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.75);
+    position: absolute;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 30px;
+    color: var(--branco);
+    gap: 10px;
+    font-weight: 700;
+} 
+
+.nav{
+    width: 200px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--branco);
+}
+
+.nav:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.off {
+    display: none;
+}
+
+
+#contentCadastro{
+    width: 90%;
+    height: 90%;
+}

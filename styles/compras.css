@@ -1,0 +1,211 @@
+main{
+    width: 100%;
+    min-height: calc(100% - 80px);
+    background-color: var(--cor2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contentProdutosLista{
+    min-width: 320px;
+    width: 90%;
+    height: 500px;
+    background-color: var(--branco);
+    border-radius: 15px;
+    box-shadow: var(--sombra1);
+    color: var(--branco);
+}
+
+#contentProdutosLista > h1{
+    width: 100%;
+    height: 40px;
+    background-color: var(--cor5);
+    border-radius: 15px 15px 0 0;
+    text-align: center;
+    color: var(--branco);
+}
+
+#lista {
+    width: 100%;
+    height: 90%;
+    overflow-y: scroll;
+    padding: 5px;
+}
+
+.produtoList{
+    width: 100%;
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 15px;
+    margin: 10px 0;
+}
+
+.produtoList > p {
+    margin: 10px;
+    font-size: 20px;
+}
+
+.about{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: var(--branco);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--preto);
+    opacity: 1;
+}
+
+.about:hover{
+    opacity: 0.8;
+    cursor: pointer;
+    transition: 0.4s linear;
+    font-size: 17px;
+}
+
+.lineList{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.lineList > p {
+    width: 70%;
+    font-size: 20px;
+}
+
+.modalCompras{
+    background-color: var(--branco);
+    box-shadow: var(--sombra1);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+#modalComprasHead{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    justify-content: space-between;
+}   
+
+#contentCompras{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#campos{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 10px;
+    flex-wrap: wrap;
+}
+
+.campoCliente{
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    gap: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px;
+}
+
+.campoCompra{
+    margin: 10px;
+    display: flex;
+    width: 100%;
+    gap: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    justify-content: space-around; 
+}
+
+.campo{
+    width: 300px;
+    word-wrap: break-word;
+}
+
+
+#produtosCompras{
+    width: 95%;
+    margin: 10px;
+    height: 300px;
+    box-shadow: var(--sombra1);
+    border-radius: 15px;
+}
+
+#listProdutos{
+    width: 100%;
+    height: 210px;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+#produtosCompras > h2{
+    width: 100%;
+    text-align: center;
+}
+
+.compraProduto{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--cor2);
+    color: var(--branco);
+    font-size: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+#totalCompras{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 0px 20px;
+}
+
+
+@media (max-width: 659px) {
+    .campo{
+        width: 270px;
+        word-wrap: break-word;
+    }
+
+    #contentCompras{
+        align-items: center;
+    }
+
+    #campos{
+        justify-content: center;
+    }
+
+    .campoCompra{
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+.off{
+    display: none;
+}
